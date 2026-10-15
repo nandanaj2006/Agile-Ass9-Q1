@@ -1,55 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Learning Management Portal</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background: #003366; color: white; padding: 1rem; text-align: center; }
-        nav { background: #333; color: white; padding: 0.5rem; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .container { padding: 20px; max-width: 1000px; margin: auto; }
-        .section { background: white; padding: 15px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        footer { text-align: center; padding: 10px; background: #333; color: white; position: relative; bottom: 0; width: 100%; }
-    </style>
+  <meta charset="UTF-8">
+  <title>University Learning Management Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      font-size: 1.2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #edf2f7;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>University LMS Portal</h1>
+    <div class="badge">Version: v1.0.0 (Stable)</div>
+  </header>
 
-    <header>
-        <h1>EduPortal - University LMS</h1>
-        <p>Version 1.0 (Stable)</p>
-    </header>
-
-    <nav>
-        <a href="#courses">Courses</a> | <a href="#faculty">Faculty</a> | <a href="#resources">Resources</a> | <a href="#exams">Exams</a>
-    </nav>
-
-    <div class="container">
-        <div id="courses" class="section">
-            <h2>📚 Course Information</h2>
-            <p>Computer Science, Data Science, Cyber Security, and Software Engineering core paths.</p>
-        </div>
-
-        <div id="faculty" class="section">
-            <h2>👨‍🏫 Faculty Profiles</h2>
-            <p>Learn from industry experts and world-renowned researchers.</p>
-        </div>
-
-        <div id="resources" class="section">
-            <h2>📥 Learning Resources</h2>
-            <p>Access lecture slides, lab manuals, and shared GitHub repositories.</p>
-        </div>
-
-        <div id="exams" class="section">
-            <h2>📅 Examination Schedules</h2>
-            <p>Final Exams begin next month. Check your student dashboard for specific slots.</p>
-        </div>
+  <div class="container">
+    <div class="card">
+      <h2>Course Information</h2>
+      <ul>
+        <li><strong>SWE3001:</strong> Operating Systems</li>
+        <li><strong>SWE3002:</strong> Software Testing & QA</li>
+        <li><strong>SWE3003:</strong> Cloud & DevOps Architecture</li>
+      </ul>
     </div>
 
-    <footer>
-        <p>&copy; 2026 University Learning Management Portal</p>
-    </footer>
+    <div class="card">
+      <h2>Faculty Profiles</h2>
+      <ul>
+        <li><strong>Dr. A. Sharma:</strong> Distributed Systems</li>
+        <li><strong>Prof. R. Menon:</strong> Software Engineering</li>
+        <li><strong>Dr. S. K. Patel:</strong> Cloud Computing</li>
+      </ul>
+    </div>
 
+    <div class="card">
+      <h2>Learning Resources</h2>
+      <ul>
+        <li>Kubernetes Rolling Update Notes</li>
+        <li>Jenkins CI/CD Lab Worksheets</li>
+        <li>Docker Containerization Manual</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Assignment Announcements</h2>
+      <ul>
+        <li><strong>Lab Task 1:</strong> CI/CD Deployment with Jenkins</li>
+        <li><strong>Assessment 2:</strong> Kubernetes Rolling Update & Rollback</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Examination Schedules</h2>
+      <ul>
+        <li><strong>Continuous Assessment:</strong> Nov 10 - Nov 15</li>
+        <li><strong>Final Laboratory Exam:</strong> Dec 01 - Dec 10</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
